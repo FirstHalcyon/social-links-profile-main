@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  
+  <style>
+    .attribution { font-size: 11px; text-align: center; color:white;}
+    .attribution a { color: white; text-decoration: none; font-weight: 700;}
+    /* inter-regular - latin */
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      src: url('./fonts/inter-v18-latin-regular.woff2') format('woff2');
+    }
+
+    /* inter-600 - latin */
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      src: url('./fonts/inter-v18-latin-600.woff2') format('woff2');
+    }
+
+    /* inter-700 - latin */
+    @font-face {
+      font-display: swap;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      src: url('./fonts/inter-v18-latin-700.woff2') format('woff2');
+    }
+
+    /* CSS Modern Reset Start */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    body {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    input, button, textarea, select {
+      font: inherit;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+    }
+
+    #root, #__next {
+      isolation: isolate;
+    }
+
+    /* CSS Modern Reset End */
+    html {
+      background-color: hsl(0, 0%, 8%);
+      font-family: Inter, sans-serif;
+    }
+    body {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr;
+      place-items: center;
+    }
+    main {
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      place-items: center;
+      row-gap: 1.5rem;
+      padding: 2.5rem;
+      background-color: hsl(0, 0%, 12%);
+      max-width: fit-content;
+      border-radius: 10px;
+    }
+    img {
+      width: 6rem;
+      border-radius: 50%;
+    }
+    section {
+      text-align: center;
+    }
+    h1 {
+      color: white;
+      margin-bottom: 0.25rem;
+    }
+    .location {
+      color: hsl(75, 94%, 57%);
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .description {
+      color: white;
+      font-size: 0.9rem;
+
+    }
+    nav {
+      display: grid;
+      grid-template-rows: repeat(5,auto);
+      grid-auto-rows: auto;
+      row-gap: 1rem;
+    }
+    button {
+      color: white;
+      transition: 0.2s;
+      font-weight: 700;
+      font-size: 0.9rem;
+      background-color: hsl(0, 0%, 20%);
+      border: 0;
+      border-radius: 10px;
+      padding: 0.75rem 6rem;
+    }
+    button:hover {
+      color:hsl(0, 0%, 12%);
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="./assets/images/avatar-jessica.jpeg" alt="portrait"/>
+    <section>
+      <h1>Jessica Randall</h1>
+      <p class="location">London, United Kingdom</p>
+    </section>
+    <p class="description">"Front-end developer and avid reader."</p>
+    <nav>
+      <button type="button">GitHub</button>
+      <button type="button">Frontend Mentor</button>
+      <button type="button">LinkedIn</button>
+      <button type="button">Twitter</button>
+      <button type="button">Instagram</button>
+    </nav>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/FirstHalcyon">Hal</a>.
+  </footer>
+</body>
+</html>
