@@ -1,1 +1,1 @@
-# social-links-profile-main
+Linktree for developer. All Grid, no Flex. No divs either, just semantic html.
